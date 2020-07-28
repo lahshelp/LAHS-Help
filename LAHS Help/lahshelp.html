@@ -13,6 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src = testSignInSignUp.js></script>
+	<script src="https://kit.fontawesome.com/94c957811c.js" crossorigin="anonymous"></script>
 	<!-- Import Bootstrap stuff -->
 
 <style>
@@ -79,7 +80,7 @@
 <body>
 
 	<!-- Navigation -->
-	<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top" style = "length: 10%">
 
 		<!-- LOGO -->
 		<a class = "navbar-brand" href = "#"><img src = "images/testLogo.png"></a>
@@ -113,12 +114,11 @@
 
 			<ul class = "navbar-nav ml-auto nav-fill">
 				<li>
-					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3" onclick = "signIn()">Sign In</button>
+					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3" onclick = "signIn()">Sign In <i class="fas fa-user"></i> </button>
 				</li>
 				<li>
-					<button type = "button" class = "btn btn-outline-primary btn-lg mr-2" onclick = "signUp()">Sign Up</button>
+					<button type = "button" class = "btn btn-outline-primary btn-lg mr-2" onclick = "signUp()">Sign Up <i class="fas fa-user-plus"></i> </button>
 				</li>
-
 			</ul>
 				<!-- Items in navigation bar -->
 			</ul>
@@ -128,7 +128,8 @@
 	</nav>
 <!--  Navigation  -->
 
-	<div class="card mb-3" style="width: 85em;">
+
+	<div class="card mb-3" style="width: 85em; length: 60%">
 		<div class="card-body" style="padding-left: 140px; padding-top: 165px; padding-bottom: 120px;">
 			<h4 class="card-title text-primary animate__animated animate__fadeInUp animate__slower" style="font-size: 75px; padding-bottom: 40px;">
 				Welcome to LAHS Help
@@ -150,6 +151,7 @@
 	</div>
 	<div class="column slow-transition">
 		<a href = "#"><img class = "columnCard" src="images/ForumCard.png" alt="ForumCard"> </a>
+
 	</div>
 </div>
 
