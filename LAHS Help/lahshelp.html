@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LAHS Help</title>
+	<!-- Import Bootstrap stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src = testSignInSignUp.js></script>
+	<!-- Import Bootstrap stuff -->
+
+<style>
+	h4 {
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	h5 {
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	a {
+		font-family: 'Ubuntu', sans-serif;
+	}
+</style>
+
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+
+		<!-- LOGO -->
+		<a class = "navbar-brand" href = "#"><img src = "images/testLogo.png"></a>
+		<!-- LOGO -->
+
+		<!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
+		<button class = "navbar-toggler navbar-toggler-right" data-toggle = "collapse" data-target = "#navbar_collapse">
+			<span><img src = "images/navbar_toggle_button.png"></span>
+		</button>
+		<!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
+
+
+		<!-- Navigation bar wrapped in a div so the toggle button can target it -->
+		<div class = "collapse navbar-collapse ml-auto" id = "navbar_collapse">
+
+			<!-- Items in navigation bar -->
+			<ul class = "navbar-nav nav-fill w-50">
+				<li class = "nav-item active">
+					<a class = "nav-link" style = "font-size: 22px;" href = "#">Home</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" style = "font-size: 22px;" href="#">About</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" style = "font-size: 22px;" href="#">News</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" style = "font-size: 22px;" href="#">Forum </a>
+				</li>
+			</ul>
+
+			<ul class = "navbar-nav ml-auto nav-fill">
+				<li>
+					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3" onclick = "signIn()">Sign In</button>
+				</li>
+				<li>
+					<button type = "button" class = "btn btn-outline-primary btn-lg mr-2" onclick = "signUp()">Sign Up</button>
+				</li>
+
+			</ul>
+				<!-- Items in navigation bar -->
+			</ul>
+		</div>
+		<!-- Navigation bar wrapped in a div so the toggle button can target it -->
+
+	</nav>
+<!--  Navigation  -->
+
+	<div class="card" style="width: 85em;">
+	<div class="card-body" style="padding-left: 140px; padding-top: 165px; padding-bottom: 120px;">
+	<h4 class="card-title text-primary animate__animated animate__fadeInUp animate__slow" style="font-size: 75px; padding-bottom: 40px;">
+		Welcome to LAHS Help
+	</h4>
+	<h5 class="card-subtitle mb-4 text-muted animate__animated animate__fadeInUp animate__delay-1s animate__slow" style="font-size: 30px;">
+		LAHS staff are woefully bad at communicating useful information. We can fi- POGGERS
+	</h5>
+	</div>
+	</div>
+
+	<div class="card-group">
+	  <div class="card" style= "padding-right: 5px;">
+	    <img src="images/calendar.jpg" class="card-img-top" alt="calendar">
+	    <div class="card-body">
+	      <h5 class="card-title">Calendar</h5>
+	      <p class="card-text">Keep up to date with the upcoming events at lahs</p>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <img src="images/news.jpg" class="card-img-top" alt="news">
+	    <div class="card-body">
+	      <h5 class="card-title">News</h5>
+	      <p class="card-text">LOL CRINGE POGGERS OMEGALUL PEPEHANDS LULW</p>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <img src="images/forum.jpg" class="card-img-top" alt="...">
+	    <div class="card-body">
+	      <h5 class="card-title">Forum</h5>
+	      <p class="card-text">Ask a question about anything lahs related</p>
+	      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	    </div>
+	  </div>
+	</div>
+
+
+
+</body>
+</html>
