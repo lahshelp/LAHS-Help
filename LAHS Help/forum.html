@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LAHS Help</title>
+	<!-- Import Bootstrap stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src = testSignInSignUp.js></script>
+	<script src="https://kit.fontawesome.com/94c957811c.js" crossorigin="anonymous"></script>
+</head>
+
+<title>About</title>
+
+<body>
+  <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top" style = "length: 10%">
+
+    <!-- LOGO -->
+    <a class = "navbar-brand" href = "lahshelp.html"><img src = "images/testLogo.png"></a>
+    <!-- LOGO -->
+
+    <!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
+    <button class = "navbar-toggler navbar-toggler-right" data-toggle = "collapse" data-target = "#navbar_collapse">
+      <span><img src = "images/navbar_toggle_button.png"></span>
+    </button>
+    <!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
+
+
+    <!-- Navigation bar wrapped in a div so the toggle button can target it -->
+    <div class = "collapse navbar-collapse ml-auto" id = "navbar_collapse">
+
+      <!-- Items in navigation bar -->
+      <ul class = "navbar-nav nav-fill w-50">
+        <li class = "nav-item">
+          <a class = "nav-link ubuntu" style = "font-size: 22px;" href = "lahshelp.html">Home</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link ubuntu" style = "font-size: 22px;" href="about.html">About</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link ubuntu" style = "font-size: 22px;" href="news.html">News</a>
+        </li>
+        <li class = "nav-item active">
+          <a class = "nav-link ubuntu" style = "font-size: 22px;" href="forum.htl">Forum </a>
+        </li>
+      </ul>
+
+      <ul class = "navbar-nav ml-auto nav-fill">
+        <li>
+          <button type = "button" class = "btn btn-outline-primary btn-lg mr-3 ubuntu" onclick = "signIn()">Sign In <i class="fas fa-user"></i> </button>
+        </li>
+        <li>
+          <button type = "button" class = "btn btn-outline-primary btn-lg mr-2 ubuntu" onclick = "signUp()">Sign Up <i class="fas fa-user-plus"></i> </button>
+        </li>
+      </ul>
+        <!-- Items in navigation bar -->
+      </ul>
+    </div>
+    <!-- Navigation bar wrapped in a div so the toggle button can target it -->
+
+  </nav>
+
+</body>

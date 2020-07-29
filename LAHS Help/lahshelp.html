@@ -17,15 +17,7 @@
 	<!-- Import Bootstrap stuff -->
 
 <style>
-	h4 {
-		font-family: 'Ubuntu', sans-serif;
-	}
-
-	h5 {
-		font-family: 'Ubuntu', sans-serif;
-	}
-
-	a {
+	.ubuntu {
 		font-family: 'Ubuntu', sans-serif;
 	}
 
@@ -83,7 +75,7 @@
 	<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top" style = "length: 10%">
 
 		<!-- LOGO -->
-		<a class = "navbar-brand" href = "#"><img src = "images/testLogo.png"></a>
+		<a class = "navbar-brand" href = "lahshelp.html"><img src = "images/testLogo.png"></a>
 		<!-- LOGO -->
 
 		<!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
@@ -99,25 +91,25 @@
 			<!-- Items in navigation bar -->
 			<ul class = "navbar-nav nav-fill w-50">
 				<li class = "nav-item active">
-					<a class = "nav-link" style = "font-size: 22px;" href = "#">Home</a>
+					<a class = "nav-link ubuntu" style = "font-size: 22px;" href = "lahshelp.html">Home</a>
 				</li>
 				<li class = "nav-item">
-					<a class = "nav-link" style = "font-size: 22px;" href="#">About</a>
+					<a class = "nav-link ubuntu" style = "font-size: 22px;" href="news.html">News</a>
 				</li>
 				<li class = "nav-item">
-					<a class = "nav-link" style = "font-size: 22px;" href="#">News</a>
+					<a class = "nav-link ubuntu" style = "font-size: 22px;" href="about.html">About</a>
 				</li>
 				<li class = "nav-item">
-					<a class = "nav-link" style = "font-size: 22px;" href="#">Forum </a>
+					<a class = "nav-link ubuntu" style = "font-size: 22px;" href="forum.html">Forum </a>
 				</li>
 			</ul>
 
 			<ul class = "navbar-nav ml-auto nav-fill">
 				<li>
-					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3" onclick = "signIn()">Sign In <i class="fas fa-user"></i> </button>
+					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3 ubuntu" onclick = "signIn()">Sign In <i class="fas fa-user"></i> </button>
 				</li>
 				<li>
-					<button type = "button" class = "btn btn-outline-primary btn-lg mr-2" onclick = "signUp()">Sign Up <i class="fas fa-user-plus"></i> </button>
+					<button type = "button" class = "btn btn-outline-primary btn-lg mr-2 ubuntu" onclick = "signUp()">Sign Up <i class="fas fa-user-plus"></i> </button>
 				</li>
 			</ul>
 				<!-- Items in navigation bar -->
@@ -131,10 +123,10 @@
 
 	<div class="card mb-3" style="width: 85em; length: 60%">
 		<div class="card-body" style="padding-left: 140px; padding-top: 165px; padding-bottom: 120px;">
-			<h4 class="card-title text-primary animate__animated animate__fadeInUp animate__slower" style="font-size: 75px; padding-bottom: 40px;">
+			<h4 class="card-title text-primary animate__animated animate__fadeInUp animate__slower ubuntu" style="font-size: 75px; padding-bottom: 40px;">
 				Welcome to LAHS Help
 			</h4>
-			<h5 class="card-subtitle mb-4 text-muted animate__animated animate__fadeInUp animate__delay-1s animate__slower" style="font-size: 30px;">
+			<h5 class="card-subtitle mb-4 text-muted animate__animated animate__fadeInUp animate__delay-1s animate__slower ubuntu" style="font-size: 30px;">
 				LAHS staff are woefully bad at communicating useful information. We can fix that.
 			</h5>
 		</div>
@@ -144,13 +136,13 @@
 
 <div class="row columnGap mb-5">
 	<div class="column ml-5 slow-transition">
-		<a href = "#"><img class = "columnCard" src="images/NewsCard.png" alt="NewsCard"></a>
+		<a href = "news.html"><img class = "columnCard" src="images/NewsCard.png" alt="NewsCard"></a>
 	</div>
 	<div class="column slow-transition">
-		<a href = "#"><img class = "columnCard"src="images/AboutCard.png" alt="AboutCard"></a>
+		<a href = "about.html"><img class = "columnCard"src="images/AboutCard.png" alt="AboutCard"></a>
 	</div>
 	<div class="column slow-transition">
-		<a href = "#"><img class = "columnCard" src="images/ForumCard.png" alt="ForumCard"> </a>
+		<a href = "forum.html"><img class = "columnCard" src="images/ForumCard.png" alt="ForumCard"> </a>
 
 	</div>
 </div>
