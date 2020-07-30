@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LAHS Help</title>
+	<!-- Import Bootstrap stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src = testSignInSignUp.js></script>
+	<script src="https://kit.fontawesome.com/94c957811c.js" crossorigin="anonymous"></script>
+	<meta name="google-signin-client_id" content="96512589013-seg96dssaqu58n6i6l673m4kmr84829k.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+	<!-- Import Bootstrap stuff -->
+
+<style>
+	.ubuntu {
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	.aboutImage {
+		max-width: 24%;
+		height: auto;
+	}
+
+	.newsImage {
+		max-width: 22%;
+		height:auto;
+	}
+
+	.forumImage {
+		max-width: 27%;
+		height: auto;
+	}
+
+	.column {
+		width: 30%;
+		border: 1.5px solid #dfdfdf;
+		border-radius: 20px;
+		overflow: hidden;
+
+	}
+
+	.columnCard {
+		max-width: 100%;
+
+	}
+
+	.columnGap {
+		column-gap: 1.6%;
+	}
+
+	.card {
+		border: 0px solid #dfdfdf !important;
+	}
+
+	.slow-transition {
+  box-shadow: 0 0 10px 0 #dfdfdf;
+  transition: box-shadow 500ms;
+}
+
+.slow-transition:hover {
+  box-shadow: 0 10px 50px 0 #ffffff;
+}
+
+</style>
+
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top" style = "length: 10%">
+
+		<!-- LOGO -->
+		<a class = "navbar-brand" href = "lahshelp.html"><img src = "images/testLogo.png"></a>
+		<!-- LOGO -->
+
+		<!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
+		<button class = "navbar-toggler navbar-toggler-right" data-toggle = "collapse" data-target = "#navbar_collapse">
+			<span><img src = "images/navbar_toggle_button.png"></span>
+		</button>
+		<!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
+
+
+		<!-- Navigation bar wrapped in a div so the toggle button can target it -->
+		<div class = "collapse navbar-collapse ml-auto" id = "navbar_collapse">
+
+			<!-- Items in navigation bar -->
+			<ul class = "navbar-nav nav-fill w-50">
+			</ul>
+
+			<ul class = "navbar-nav ml-auto nav-fill">
+				<li>
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </li>
+                <li>
+                    <a href="#" onclick="signOut();">Sign out</a>
+                    <script>
+                        function signOut() {
+                            var auth2 = gapi.auth2.getAuthInstance();
+                            auth2.signOut().then(function () {
+                            console.log('User signed out.');
+                            });
+                        }
+                    </script>
+				</li>
+			</ul>
+				<!-- Items in navigation bar -->
+			</ul>
+		</div>
+		<!-- Navigation bar wrapped in a div so the toggle button can target it -->
+
+	</nav>
+<!--  Navigation  -->
+
+
+	<div class="card mb-3" style="width: 85em; length: 60%">
+		<div class="card-body" style="padding-left: 140px; padding-top: 165px; padding-bottom: 120px;">
+			<h4 class="card-title text-primary animate__animated animate__fadeInUp animate__slower ubuntu" style="font-size: 75px; padding-bottom: 40px;">
+				Welcome to LAHS Help
+			</h4>
+			<h5 class="card-subtitle mb-4 text-muted animate__animated animate__fadeInUp animate__delay-1s animate__slower ubuntu" style="font-size: 30px;">
+                LAHS staff are woefully bad at communicating useful information. We can fix that. Please sign in to access the website
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+			</h5>
+		</div>
+	</div>
+
+
+</body>
+</html>
