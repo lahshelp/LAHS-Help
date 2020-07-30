@@ -14,6 +14,8 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src = testSignInSignUp.js></script>
 	<script src="https://kit.fontawesome.com/94c957811c.js" crossorigin="anonymous"></script>
+	<meta name="google-signin-client_id" content="805657253878-206tmkgl26go1k7nv4bqq3npui8ntu5n.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<!-- Import Bootstrap stuff -->
 
 <style>
@@ -106,10 +108,7 @@
 
 			<ul class = "navbar-nav ml-auto nav-fill">
 				<li>
-					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3 ubuntu" onclick = "signIn()">Sign In <i class="fas fa-user"></i> </button>
-				</li>
-				<li>
-					<button type = "button" class = "btn btn-outline-primary btn-lg mr-2 ubuntu" onclick = "signUp()">Sign Up <i class="fas fa-user-plus"></i> </button>
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
 				</li>
 			</ul>
 				<!-- Items in navigation bar -->
