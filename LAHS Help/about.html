@@ -73,6 +73,21 @@
 <title>About</title>
 
 <body>
+	<script>
+		function signOut() {
+		  var auth2 = gapi.auth2.getAuthInstance();
+		  auth2.signOut().then(function () {
+			console.log('User signed out.');
+			location.replace("landingpage.html")
+		  });
+		}
+	
+		function onLoad() {
+		  gapi.load('auth2', function() {
+			gapi.auth2.init();
+		  });
+		}
+	</script>
   <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top" style = "length: 10%">
 
     <!-- LOGO -->
@@ -106,10 +121,10 @@
       </ul>
 
       <ul class = "navbar-nav ml-auto nav-fill">
-       <li>
+        <li>
+			<a href="#" onclick="signOut();">Sign out</a>
 		</li>
       </ul>
-        <!-- Items in navigation bar -->
       </ul>
     </div>
     <!-- Navigation bar wrapped in a div so the toggle button can target it -->
