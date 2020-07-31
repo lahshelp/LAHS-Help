@@ -73,6 +73,16 @@
 </style>
 
 </head>
+
+<script>
+
+	function blockRedirect(){
+		alert("You must sign in to access that page!")
+	}
+
+</script>
+
+
 <body>
 
 	<!-- Navigation -->
@@ -93,10 +103,26 @@
 		<div class = "collapse navbar-collapse ml-auto" id = "navbar_collapse">
 
 			<!-- Items in navigation bar -->
-			<ul class = "navbar-nav nav-fill w-50">
+
+
+
+			<ul class = "navbar-nav nav-fill w-50 mr-auto">
+				<li class = "nav-item active">
+					<a class = "nav-link ubuntu" style = "font-size: 22px;"href="javascript:blockRedirect()">Home</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link ubuntu" style = "font-size: 22px;" href = "javascript:blockRedirect()">About</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link ubuntu" style = "font-size: 22px;" href = "javascript:blockRedirect()">News</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link ubuntu" style = "font-size: 22px;" href="javascript:blockRedirect()">Forum </a>
+				</li>
 			</ul>
 
-			<ul class = "navbar-nav ml-auto nav-fill">
+
+			<ul class = "navbar-nav mr-3 nav-fill">
 				<li>
 					<div class="g-signin2" data-onsuccess="onSignIn"></div>
                 </li>
@@ -111,8 +137,9 @@
                     </script>
 				</li>
 			</ul>
+
 				<!-- Items in navigation bar -->
-			</ul>
+
 		</div>
 		<!-- Navigation bar wrapped in a div so the toggle button can target it -->
 

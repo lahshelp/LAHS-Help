@@ -6,6 +6,8 @@ function onSignIn(googleUser) {
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
   location.replace('lahshelp.html');
+
+  
 }
 
 function signOut() {
