@@ -17,7 +17,7 @@
 	<!-- Import Bootstrap stuff -->
 
 	<meta name="google-signin-client_id" content="96512589013-seg96dssaqu58n6i6l673m4kmr84829k.apps.googleusercontent.com">
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 
 
 
@@ -78,6 +78,21 @@
 </head>
 <body>
 
+	<script>
+		function signOut() {
+		  var auth2 = gapi.auth2.getAuthInstance();
+		  auth2.signOut().then(function () {
+			console.log('User signed out.');
+			location.replace("landingpage.html")
+		  });
+		}
+
+		function onLoad() {
+		  gapi.load('auth2', function() {
+			gapi.auth2.init();
+		  });
+		}
+	</script>
 	<!-- Navigation -->
 	<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top" style = "length: 10%">
 
