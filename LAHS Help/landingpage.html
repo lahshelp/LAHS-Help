@@ -14,14 +14,11 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src = testSignInSignUp.js></script>
 	<script src="https://kit.fontawesome.com/94c957811c.js" crossorigin="anonymous"></script>
-	<!-- Import Bootstrap stuff -->
-
 	<meta name="google-signin-client_id" content="96512589013-seg96dssaqu58n6i6l673m4kmr84829k.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 
-
-
+	<!-- Import Bootstrap stuff -->
 
 <style>
 	.ubuntu {
@@ -97,27 +94,25 @@
 
 			<!-- Items in navigation bar -->
 			<ul class = "navbar-nav nav-fill w-50">
-				<li class = "nav-item active">
-					<a class = "nav-link ubuntu" style = "font-size: 22px;" href = "lahshelp.html">Home</a>
-				</li>
-				<li class = "nav-item">
-					<a class = "nav-link ubuntu" style = "font-size: 22px;" href="about.html">About</a>
-				</li>
-				<li class = "nav-item">
-					<a class = "nav-link ubuntu" style = "font-size: 22px;" href="news.html">News</a>
-				</li>
-				<li class = "nav-item">
-					<a class = "nav-link ubuntu" style = "font-size: 22px;" href="forum.html">Forum </a>
-				</li>
 			</ul>
 
 			<ul class = "navbar-nav ml-auto nav-fill">
 				<li>
-					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3" onclick = "signOut()">Sign Out <i class="fas fa-user-plus"></i> </button>
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </li>
+                <li>
+                    <script>
+                        function signOut() {
+                            var auth2 = gapi.auth2.getAuthInstance();
+                            auth2.signOut().then(function () {
+                            console.log('User signed out.');
+                            });
+                        }
+                    </script>
 				</li>
 			</ul>
 				<!-- Items in navigation bar -->
-
+			</ul>
 		</div>
 		<!-- Navigation bar wrapped in a div so the toggle button can target it -->
 
@@ -131,24 +126,11 @@
 				Welcome to LAHS Help
 			</h4>
 			<h5 class="card-subtitle mb-4 text-muted animate__animated animate__fadeInUp animate__delay-1s animate__slower ubuntu" style="font-size: 30px;">
-				Connecting every student as Los Altos High School.
+                LAHS staff are woefully bad at communicating useful information. We can fix that. Please sign in to access the website
+                
 			</h5>
 		</div>
 	</div>
-
-
-<div class="row columnGap mb-5">
-	<div class="column ml-5 slow-transition">
-		<a href = "about.html"><img class = "columnCard"src="images/AboutCard.png" alt="AboutCard"></a>
-	</div>
-	<div class="column slow-transition">
-		<a href = "news.html"><img class = "columnCard" src="images/NewsCard.png" alt="NewsCard"></a>
-	</div>
-	<div class="column slow-transition">
-		<a href = "forum.html"><img class = "columnCard" src="images/ForumCard.png" alt="ForumCard"> </a>
-
-	</div>
-</div>
 
 
 </body>
