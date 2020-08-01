@@ -63,11 +63,15 @@
 
 	.slow-transition {
   box-shadow: 0 0 10px 0 #dfdfdf;
-  transition: box-shadow 500ms;
+  transition: box-shadow 250ms;
 }
 
 .slow-transition:hover {
   box-shadow: 0 10px 50px 0 #ffffff;
+}
+
+.signInRequest {
+	padding-bottom: 5%;
 }
 
 </style>
@@ -77,7 +81,7 @@
 <script>
 
 	function blockRedirect(){
-		alert("You must sign in to access that page!")
+		alert("You must sign in to your MVLA EMAIL to access that page!")
 	}
 
 </script>
@@ -152,10 +156,29 @@
 			<h4 class="card-title text-primary animate__animated animate__fadeInUp animate__slower ubuntu" style="font-size: 75px; padding-bottom: 40px;">
 				Welcome to LAHS Help
 			</h4>
-			<h5 class="card-subtitle mb-4 text-muted animate__animated animate__fadeInUp animate__delay-1s animate__slower ubuntu" style="font-size: 30px;">
-                LAHS staff are woefully bad at communicating useful information. We can fix that. Please sign in to access the website
 
+			<h5 class=" signInRequest card-subtitle text-muted animate__animated animate__fadeInUp animate__delay-1s animate__slower ubuntu" style="font-size: 30px;">
+					Connecting every student at Los Altos High School
 			</h5>
+
+			<h5 class="card-subtitle text-muted animate__animated animate__fadeInUp animate__delay-2s animate__slower ubuntu" style="font-size: 30px;">
+				Sign in with your MVLA email to get started
+			</h5>
+
+		</div>
+	</div>
+
+
+	<div class="row columnGap mb-5">
+		<div class="column ml-5 slow-transition">
+			<a href = "javascript:blockRedirect()"><img class = "columnCard"src="images/AboutCard.png" alt="AboutCard"></a>
+		</div>
+		<div class="column slow-transition">
+			<a href = "javascript:blockRedirect()"><img class = "columnCard" src="images/NewsCard.png" alt="NewsCard"></a>
+		</div>
+		<div class="column slow-transition">
+			<a href = "javscript:blockRedirect()"><img class = "columnCard" src="images/ForumCard.png" alt="ForumCard"> </a>
+
 		</div>
 	</div>
 

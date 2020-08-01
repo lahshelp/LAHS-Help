@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -70,21 +72,74 @@
 
 .newsHeader{
 	padding-top: 6%;
-	padding-left: 38%;
 	font-size: 425%;
-	padding-bottom: 10%
+	padding-bottom: 5%;
+	padding-left: 39%;
 }
+
+.tittilium {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+
+
+
+
+.newsCardWrapper {
+	width: 70rem;
+	box-shadow: 0 0 0.5rem 0 #dfdfdf;
+	border-radius: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.newsTitle {
+	 font-size: 2rem !important;
+	 padding-bottom:1rem;
+	 padding-left: 0.5rem;
+}
+
+.newsDescription {
+	padding-bottom:1rem;
+	padding-left: 0.7rem;
+}
+
+
+.collapseButton {
+		float: left;
+		border: 0px !important;
+		background-color: Transparent;
+		outline: none !important;
+		padding-bottom: 1rem;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+
+
+
 
 </style>
 
 <title>LAHS Help | News</title>
 
 <body>
-	
+
   <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top" style = "length: 10%">
 
     <!-- LOGO -->
-    <a class = "navbar-brand" href = "lahshelp.html"><img src = "images/testLogo.png"></a>
+    <a class = "navbar-brand" role = "button" href = "lahshelp.html"><img src = "images/testLogo.png"></a>
     <!-- LOGO -->
 
     <!-- Initialize toggle button when window is resized (for mobile devices with small screens) -->
@@ -115,11 +170,10 @@
 
       <ul class = "navbar-nav ml-auto nav-fill">
         <li>
-			<a href="#" onclick="signOut();">Sign out</a>
-		 </li>
-      </ul>
-        <!-- Items in navigation bar -->
-      </ul>
+					<button type = "button" class = "btn btn-outline-primary btn-lg mr-3" onclick = "signOut()">Sign Out</button>
+				</li>
+			</ul>
+
     </div>
     <!-- Navigation bar wrapped in a div so the toggle button can target it -->
 
@@ -129,9 +183,49 @@
 		<h1 class = "text-primary newsHeader ubuntu">News Page</h1>
 	</div>
 
-	<div class="">
+<div class="card mx-auto newsCardWrapper">
+	<a class = "nostyle" data-toggle="collapse" href="#news-text-collapse">
+  	<div class="card-body">
 
-	</div>
+    	<h5 class="card-title tittilium newsTitle">Galen Rosenburg steps down as LAHS person</h5>
+
+			<div class="collapse" id = "news-text-collapse">
+				<p class= "card-text OpenSans newsDescription">
+				Galen Rosenburn took the L. Galen Rosenburn took the L.
+				Galen Rosenburn took the L. Galen Rosenburn took the L. Galen Rosenburn took the L.
+				Galen Rosenburn took the L. Galen Rosenburn took the L. Galen Rosenburn took the L.
+				Galen Rosenburn took the L. Galen Rosenburn took the L. </p>
+			</div>
+			<button class = "btn-primary-outline collapseButton" data-toggle = "collapse" data-target = "#news-text-collapse">
+				<span><img src = "images/collapseArrow.png"></span>
+			</button>
+  	</div>
+	</a>
+</div>
+
+
+
+<div class="card mx-auto newsCardWrapper">
+	<a class = "nostyle" data-toggle="collapse" href="#Karen">
+  	<div class="card-body">
+
+    	<h5 class="card-title tittilium newsTitle">BREAKING: Karen Chungus is no longer Wholesome 100</h5>
+
+			<div class="collapse" id = "Karen">
+				<p class= "card-text OpenSans newsDescription">
+					Valorant Poggers. Fortnie Poggers. Valorant Poggers. Fortnie Poggers.
+					Valorant Poggers. Fortnie Poggers. Valorant Poggers. Fortnie Poggers.
+					Valorant Poggers. Fortnie Poggers. Valorant Poggers. Fortnie Poggers.
+					Valorant Poggers. Fortnie Poggers. Valorant Poggers. Fortnie Poggers.
+					Valorant Poggers. Fortnie Poggers. Valorant Poggers. Fortnie Poggers.
+				</p>
+			</div>
+			<button class = "btn-primary-outline collapseButton" data-toggle = "collapse">
+				<span><img src = "images/collapseArrow.png"></span>
+			</button>
+  	</div>
+	</a>
+</div>
 
 
 
